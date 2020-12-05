@@ -1,0 +1,16 @@
+.main-header {
+  padding: 35px;
+}
+.main-header h1 {
+  color: wheat;
+  font-size: 30px;
+  font-weight: 600;
+}
+.main-header__column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header__column span {
+  padding: 0px 10px;
+}

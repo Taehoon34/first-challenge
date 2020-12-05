@@ -9,7 +9,7 @@
 .welcome-header__title {
   font-size: 25px;
   font-weight: 600;
-  color: var(--green);
+  color: var(--brown);
   margin-bottom: 30px;
 }
 
@@ -30,10 +30,11 @@
   font-size: 25px;
   border: none;
   border-bottom: 1px solid gainsboro;
+  border-radius: 13px;
 }
 
 .login-form input[type="submit"] {
-  background-color: var(--green);
+  background-color: var(--brown);
   cursor: pointer;
   border-radius: 15px;
 }
@@ -48,5 +49,5 @@
 
 .login-form input[type="text"]:focus,
 .login-form input[type="password"]:focus {
-  border-color: var(--green);
+  border-color: var(--brown);
 }
