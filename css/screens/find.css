@@ -43,7 +43,7 @@
   align-items: center;
   margin-top: 20px;
 }
-.open-chat__column img {
+.open-chat__column__imgtag img {
   width: 115px;
   height: 115px;
   border-radius: 20px;
@@ -64,4 +64,34 @@
   width: 18px;
   height: 18px;
   border-radius: 50%;
+}
+.open-chat__column__imgtag {
+  display: flex;
+  position: relative;
+}
+.open-chat__column__imgtag span {
+  position: absolute;
+  display: flex;
+  font-size: 13px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  color: white;
+  bottom: 10px;
+  right: 10px;
+}
+@keyframes dogjump {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(2);
+    color: var(--brown);
+  }
+  100% {
+    transform: none;
+  }
+}
+.open-chat__column__imgtag i:hover {
+  will-change: transform;
+  animation: dogjump 1s ease-in-out infinite;
 }

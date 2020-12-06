@@ -14,3 +14,14 @@
 .main-header__column span {
   padding: 0px 10px;
 }
+@keyframes cogturn {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+.main-header__icons .fa-cog:hover {
+  animation: cogturn 1.5s linear infinite;
+}

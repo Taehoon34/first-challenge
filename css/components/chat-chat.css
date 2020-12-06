@@ -59,11 +59,59 @@
   margin-right: 5px;
 }
 .reply {
+  position: fixed;
   bottom: 0;
-}
-.reply-element {
-  background-color: white;
-  display: flex;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: skyblue;
   box-sizing: border-box;
+  padding: 5px 25px;
+}
+.reply__column:first-child {
+  width: 10%;
+}
+.reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+.reply__column input {
+  padding: 12px;
+  width: 97%;
+  border-radius: 20px;
+  border-color: rgba(0, 0, 0, 0.3);
+}
+.reply i {
+  color: blueviolet;
+}
+.reply__column:last-child > i,
+.reply__column:last-child button {
+  position: absolute;
+  right: -3px;
+  top: 13px;
+}
+.reply__column:last-child > i {
+  right: 20px;
+}
+.reply__column:last-child button {
+  right: -10px;
+  border: none;
+  background-color: white;
+}
+.reply__column input:focus {
+  border-color: slateblue;
+}
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-smile-wink,
+.reply:focus-within button {
+  opacity: 0;
+}
+.reply input:focus {
+  transform: translateY(-5px);
+}
+.reply .reply__column:first-child,
+.reply .fa-smile-wink,
+.reply button {
+  transition: opacity 0.3s ease-in-out;
 }
